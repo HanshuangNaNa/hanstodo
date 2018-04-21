@@ -7,4 +7,10 @@
 # Description:
 """
 import logging
+import os
 logging.basicConfig(level=logging.INFO,format='%(asctime)s %(filename)s : %(levelname)s %(message)s',datefmt='%Y-%m-%d %A %H:%M:%S')
+
+if __name__ == '__main__':
+    print(__file__)
+    print('dirname{}'.format(os.path.abspath(os.path.dirname(__file__))))
+    print(os.path.dirname(__file__))
